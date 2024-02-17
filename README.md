@@ -67,3 +67,14 @@ And it even comes with documentation...
 - [Building and programming your own RoomJS MUD/MOO](doc/PROGRAMMING.md)
 - [Organizing and customizing your world objects](doc/CUSTOMIZING.md)
 - [A brief description of the demonstration mudlib](doc/DEMO_MUDLIB.md)
+
+
+Instructions for Newbies on Ubuntu
+==================================
+
+To get yarn:
+1. `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash`
+1. `source ~/.bashrc`
+1. `nvm install --lts --latest-npm`
+1. `npm uninstall -g yarn pnpm`
+1. `npm install -g corepack`

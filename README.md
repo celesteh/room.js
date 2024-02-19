@@ -78,3 +78,22 @@ To get yarn:
 1. `nvm install --lts --latest-npm`
 1. `npm uninstall -g yarn pnpm`
 1. `npm install -g corepack`
+
+Installing on Opalstack
+=======================
+
+1. [Use the web interface to install a new Node application](https://docs.opalstack.com/topic-guides/nodejs/)
+1. Install Node
+    1. `cd ~/apps/name_of_app`
+    1. `mv node node.old`
+    1. `mkdir node`
+    1. `wget https://nodejs.org/dist/latest-v20.x/node-v20.11.1.tar.gz`
+    1. `tar zxf node-v20.11.1.tar.gz`
+    1. `cd node-v20.11.1`
+    1. `scl enable devtoolset-11 -- ./configure --prefix=$HOME/apps/name_of_app/node`
+    1. `scl enable devtoolset-11 -- make -j2`
+    1. `scl enable devtoolset-11 -- make install`
+1. Just in the shell where you need to use npm: `export PATH=$HOME/opt/node/bin:$PATH`
+1. `npm uninstall -g yarn pnpm`
+1. `npm install -g corepack`
+

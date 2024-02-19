@@ -94,6 +94,6 @@ Installing on Opalstack
     1. `scl enable devtoolset-11 -- make -j2`
     1. `scl enable devtoolset-11 -- make install`
 1. Just in the shell where you need to use npm: `export PATH=$HOME/apps/name_of_app/node/bin:$PATH`
-1. `npm uninstall -g yarn pnpm`
-1. `npm install -g corepack`
+1. `npm uninstall  yarn pnpm`
+1. `npm install  corepack`
 
